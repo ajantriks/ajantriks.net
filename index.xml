@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ajantriks // sumandro</title>
+    <link>http://ajantriks.github.io/ajantriks.net/</link>
+    <description>Recent content on ajantriks // sumandro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://ajantriks.github.io/ajantriks.net/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>
