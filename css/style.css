@@ -29,8 +29,10 @@ h5 {
   margin-bottom: 15px; }
 
 h6 {
-  font-size: 14px;
-  margin-bottom: 12px; }
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    font-weight: 400; }
 
 p {
   line-height: 1.8;
@@ -78,11 +80,8 @@ pre {
   font-size: 16px; }
 
 code {
-  padding: 2px 4px;
-  font-size: 90%;
-  color: #F03838;
-  background-color: #F1F0EA;
-  border-radius: 4px; }
+  font-size: 75%;
+  font-weight: 600; }
 
 hr {
   border: none;
@@ -411,7 +410,8 @@ table {
 .post-stub-description {
   display: inline-block;
   margin: 0;
-  text-transform: none; }
+  text-transform: none;
+  line-height: 18px; }
 
 .post-stub-date {
   display: inline-block; }
@@ -488,7 +488,7 @@ table {
   padding: 0 25px;
   overflow: auto; }
   .footer .site-title-wrapper {
-    margin: 80px auto 0px; }
+    margin: 50px auto 0px; }
   .footer .site-title a:hover,
   .footer .button-square:hover {
     background: #121212; }
