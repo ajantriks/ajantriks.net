@@ -7,7 +7,7 @@ html, body {
 body {
   background: #FEFEFE;
   color: #424242;
-  font-family: "Open Sans", arial, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 18px; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none; }
 
 h1 {
-  font-size: 26px; }
+  font-size: 16px; }
 
 h2 {
   font-size: 24px; }
@@ -23,10 +23,6 @@ h2 {
 h3 {
   font-size: 20px;
   margin-bottom: 20px; }
-
-h4 {
-  font-size: 18px;
-  margin-bottom: 18px; }
 
 h5 {
   font-size: 16px;
@@ -47,23 +43,23 @@ a {
 ul, ol {
   list-style-position: inside;
   line-height: 1.4;
-  margin: 0 0 20px;
+  margin: 20px 0 20px;
   padding: 0; }
   ul ul, ul ol, ol ul, ol ol {
-    margin: 10px 0 0 20px; }
+    margin: 20px 0 0 20px; }
   ul li, ol li {
-    margin: 0 0 2px; }
+    margin: 15px 0 2px; }
     ul li:last-of-type, ol li:last-of-type {
       margin-bottom: 0; }
 
 blockquote {
-  border-left: 1px dotted #F03838;
-  margin: 40px 0;
-  padding: 5px 30px; }
+  border-left: 4px solid #c83737;
+  margin: 10px 0 30px 2px;
+  padding: 15px 20px; 
+  background-color: #efefef; }
   blockquote p {
-    color: #AEADAD;
+    color: #333;
     display: block;
-    font-style: italic;
     margin: 0;
     width: 100%; }
 
@@ -163,14 +159,14 @@ table {
     background: #F03838; }
 
 .button-square {
-  background: #F03838;
-  color: #FFF;
+  color: #333;
   float: left;
-  font-size: 17px;
+  font-size: 20px;
   margin: 0 0 0 10px;
   padding: 3px 8px 4px; }
   .button-square:hover {
-    background: #303030; }
+    color: #c83737;
+    background: #fff; }
 
 .error {
   text-align: center; }
@@ -182,29 +178,50 @@ table {
 /* Site Header */
 /* ============================================================ */
 .site-header {
-  padding: 40px 0 0;
+  padding: 100px 0 0;
   overflow: auto;
-  text-align: center;
-  text-transform: uppercase; }
+  text-align: left;
+  text-transform: lowercase; }
 
 .site-title-wrapper {
   display: table;
   margin: 0 auto; }
+  
+.site-title-banner {
+  overflow: auto;
+  padding: 0 5px; }
+  
+.site-title-right {
+   float:right; }
 
 .site-title {
   float: left;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  margin: 0;
-  text-transform: uppercase; }
+  margin: 0 10px;
+  text-transform: lowercase; }
   .site-title a {
     float: left;
-    background: #F03838;
-    color: #FEFEFE;
-    padding: 5px 10px 6px; }
+    color: #333; }
     .site-title a:hover {
-      background: #303030; }
-
+      color: #c83737;
+      background: #fff; }
+      
+.profile-link {
+  float: left;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+  text-transform: lowercase; }
+  .profile-link a {
+    float: left;
+    color: #333;
+    border-bottom: 2px solid #333; }
+    .profile-link a:hover {
+      color: #c83737;
+      background: #fff;
+      border-bottom: 2px solid #c83737; }
+      
 .site-logo {
   display: block; }
   .site-logo img {
@@ -212,15 +229,22 @@ table {
 
 .site-nav {
   list-style: none;
-  margin: 28px 0 10px; }
+  margin: 5px 0 24px 0;
+  padding: 0 10px; }
 
 .site-nav-item {
   display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  margin: 0 10px; }
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px;
+  border-bottom: 2px solid #444; }
+  .site-nav-item a {
+    color: #444; 
+  }
   .site-nav-item a:hover {
-    color: #424242; }
+    color: #c83737; 
+    border-bottom: 2px solid #c83737; 
+  }
 
 /* ============================================================ */
 /* Post */
@@ -229,33 +253,36 @@ table {
   display: none; }
 
 .post-container {
-  margin: 0 40px; }
+  margin: 25px 12px 0 12px; }
 
 .post-header {
-  border-bottom: 6px solid #303030;
-  margin: 0 0 20px;
+  border-bottom: 2px solid #333;
+  margin: 0 0 15px;
   padding: 0 0 20px;
-  text-align: center;
-  text-transform: uppercase; }
+  text-align: left; }
 
 .post-title,
 .page-title {
-  font-size: 52px;
-  font-weight: 700;
-  margin: 15px 0;
-  text-align: center;
-  text-transform: uppercase; }
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 44px; 
+  color: #c83737; }
 
 .page-title {
   margin: 15px 40px; }
 
+.post-description {
+  font-size: 16px; }
+  
 .post-date,
 .blog-description {
   color: #AEADAD;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1;
-  margin: 25px 0 0; }
+  margin: 10px 0 10px; }
   .post-date a,
   .blog-description a {
     color: #AEADAD; }
@@ -263,25 +290,41 @@ table {
   .blog-description a:hover {
     color: #F03838; }
   .post-date:after,
+/* 
   .blog-description:after {
     border-bottom: 1px dotted #303030;
     content: "";
     display: block;
     margin: 40px auto 0;
     width: 100px; }
+*/
 
-.post-content a:hover {
-  border-bottom: 1px dotted #F03838;
+.post-content {
+  margin-top: 25px;
+}
+
+.post-content a {
+  color: #c83737;;
   padding: 0 0 2px; }
+.post-content a:hover {
+  color: #c83737;
+  border-bottom: 2px solid #c83737;
+  padding: 0 0 2px; }
+
 .post-content:last-child {
   margin-bottom: 0; }
+
+.post-content h4 {
+  font-weight: 600;
+  font-size: 16px;
+  font-style: italic; }
 
 .post-footer {
   margin-top: 5px; }
 
 .post-tags,
 .share {
-  color: #AEADAD;
+  color: #333;
   font-size: 14px; }
   .post-tags span,
   .share span {
@@ -294,10 +337,10 @@ table {
     color: #303030; }
 
 .share {
-  float: right; }
+  float: left; }
   .share a {
-    background: #F03838;
-    color: #FFF;
+    background: #fff;
+    color: #333;
     display: inline-block;
     font-size: 16px;
     margin-left: 5px;
@@ -305,7 +348,7 @@ table {
     width: 30px;
     text-align: center; }
   .share a:hover {
-    background: #303030; }
+    color: #c83737; }
 
 .post-navigation {
   display: table;
@@ -332,25 +375,21 @@ table {
 /* Post Index */
 /* ============================================================ */
 .post-list {
-  list-style: none; }
+  list-style: none; 
+  margin: 20px 10px 0 15px; }
 
 .post-stub {
-  border-bottom: 1px dotted #303030;
-  margin: 0;
+  border-bottom: 2px solid #efefef;  
   position: relative; }
   .post-stub:first-child {
     padding-top: 0; }
   .post-stub a {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
     display: block;
-    color: #424242;
-    padding: 20px 5px; }
+    color: #333;
+    font-size: 16px;
+    margin: 0 0 10px;  }
     .post-stub a:hover {
-      background: #FCF5F5;
-      color: #F03838;
-      padding: 20px 12px; }
+      color: #c83737; }
       .post-stub a:hover .post-stub-tag {
         background: #F03838; }
 
@@ -377,7 +416,7 @@ table {
 .post-stub-date {
   display: inline-block; }
   .post-stub-date:before {
-    content: "/ "; }
+    content: "// "; }
 
 .next-posts-link a,
 .previous-posts-link a {
@@ -444,13 +483,12 @@ table {
 /* Footer */
 /* ============================================================ */
 .footer {
-  background: #303030;
-  color: #D3D3D3;
-  height: 265px;
-  margin-top: 95px;
+  background: #efefef;
+  margin-top: 50px;
+  padding: 0 25px;
   overflow: auto; }
   .footer .site-title-wrapper {
-    margin: 80px auto 35px; }
+    margin: 80px auto 0px; }
   .footer .site-title a:hover,
   .footer .button-square:hover {
     background: #121212; }
@@ -458,18 +496,39 @@ table {
     font-size: 23px;
     line-height: 1.1;
     padding-top: 1px; }
+  .footer h1 {
+    font-size: 18px; }
+   .footer a {
+    color: #333;
+    border-bottom: 2px solid #333; }
+    .footer a:hover {
+    color: #c83737;
+    border-bottom: 2px solid #c83737; }
 
+.footer-profile {
+  width: 45%;
+  font-size: 16px;
+  color: #333;
+  float: left; 
+  margin-left: 14px;}
+
+.footer-contact {
+  width: 45%;
+  font-size: 16px;
+  color: #333;
+  float: right; }
+    
 .footer-copyright {
-  color: #656565;
+  color: #666;
   font-size: 14px;
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase; }
+  margin-left: 15px;
+  text-align: left; }
   .footer-copyright a {
-    color: #656565;
-    font-weight: 700; }
+    color: #666;
+    border-bottom: 2px solid #666;
+    font-weight: 400; }
     .footer-copyright a:hover {
-      color: #FEFEFE; }
+      color: #c83737; }
 
 /* ============================================================ */
 /* NProgress */
