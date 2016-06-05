@@ -32,7 +32,7 @@ h6 {
     font-size: 14px;
     margin-bottom: 20px;
     margin-top: -30px;
-    font-weight: 400; }
+    font-weight: 600; }
 
 p {
   line-height: 1.8;
@@ -43,10 +43,10 @@ a {
   text-decoration: none; }
 
 ul, ol {
-  list-style-position: inside;
+  list-style-position: outside;
   line-height: 1.4;
-  margin: 20px 0 20px;
-  padding: 0; }
+  margin: 20px 0 20px 0;
+  padding-left: 0px; }  
   ul ul, ul ol, ol ul, ol ol {
     margin: 20px 0 0 20px; }
   ul li, ol li {
@@ -67,7 +67,7 @@ blockquote {
 
 img {
   display: block;
-  margin: 40px 0;
+  margin: -10px 0 40px;
   width: auto;
   max-width: 100%; }
 
@@ -89,18 +89,21 @@ hr {
   margin: 45px 0; }
 
 table {
-  margin-bottom: 40px;
-  width: 100%; }
+  margin: 30px 0;
+  width: 100%; 
+  border-bottom: 2px solid;
+  border-top: 2px solid; }
   table tbody > tr:nth-child(odd) > td,
   table tbody > tr:nth-child(odd) > th {
     background-color: #f7f7f3; }
   table th {
-    padding: 0 10px 10px;
+    padding: 10px;
+    font-size: 16px;
     text-align: left; }
   table td {
-    padding: 10px; }
-  table tr {
-    border-bottom: 1px dotted #AEADAD; }
+    padding: 10px;
+    font-size: 16px; }
+  table tr { }
 
 ::selection {
   background: #FFF5B8;
@@ -177,7 +180,7 @@ table {
 /* Site Header */
 /* ============================================================ */
 .site-header {
-  padding: 100px 0 0;
+  padding: 100px 0 10px;
   overflow: auto;
   text-align: left;
   text-transform: lowercase; }
@@ -264,9 +267,9 @@ table {
 .page-title {
   font-size: 48px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin: 10px 0 15px 0;
   text-align: left;
-  line-height: 44px; 
+  line-height: 50px; 
   color: #c83737; }
 
 .page-title {
@@ -281,7 +284,7 @@ table {
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
-  margin: 10px 0 10px; }
+  margin: 15px 0 10px; }
   .post-date a,
   .blog-description a {
     color: #AEADAD; }
@@ -316,8 +319,12 @@ table {
 .post-content h4 {
   font-weight: 600;
   font-size: 16px;
-  font-style: italic; }
+  font-style: italic;
+  line-height: 30px; }
 
+.post-content ol {
+  padding-left: 40px; }
+  
 .post-footer {
   margin-top: 5px; }
 
@@ -351,21 +358,24 @@ table {
 
 .post-navigation {
   display: table;
-  margin: 70px auto 100px; }
+  margin: 50px auto 75px; }
 
 .newer-posts,
 .older-posts {
   float: left;
-  background: #F03838;
-  color: #FEFEFE;
+  background: #fff;
+  border: 2px solid #333;
+  color: #333;
   font-size: 14px;
   font-weight: 600;
   margin: 0 5px;
-  padding: 5px 10px 6px;
+  padding: 7px 10px 6px;
   text-transform: uppercase; }
   .newer-posts:hover,
   .older-posts:hover {
-    background: #303030; }
+    background: #c83737;
+    color: #fff;
+    border: 2px solid #c83737; }
 
 .page-number {
   display: none; }
